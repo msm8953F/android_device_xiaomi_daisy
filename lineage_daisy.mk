@@ -27,10 +27,14 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 # Gapps.
 TARGET_DISABLES_GMS := true
+WITH_GMS := true 
 
-# GazaOS maintenr string added 
-MAINTAINER_GAZAOS := FARHAN
-WITH_GMS := true
+# Misc.
+AXION_CAMERA_REAR_INFO := 12MP
+AXION_CAMERA_FRONT_INFO := 5MP
+AXION_MAINTAINER := FARHAN<jisan>
+AXION_PROCESSOR := Qualcomm_Snapdragon_660
+TARGET_INCLUDE_VIPERFX := true
 
 # Recognized ROM As.
 ROM_FOLDER := lineage
