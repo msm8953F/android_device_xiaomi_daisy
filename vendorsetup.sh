@@ -38,7 +38,7 @@ git clone https://github.com/xiaomi-msm8953-devs/proprietary_vendor_xiaomi_daisy
 
 # Clone Vendor Common
 echo -e "${blue}>> Cloning Vendor Common${end}"
-git clone https://github.com/xiaomi-msm8953-devs/proprietary_vendor_xiaomi_msm8953-common -b lineage-22.2 vendor/xiaomi/msm8953-common || {
+git clone https://github.com/msm8953F/proprietary_vendor_xiaomi_msm8953-common -b Infinity-15/qpr2 vendor/xiaomi/msm8953-common || {
     echo -e "${red}Failed to clone vendor common${end}"
 }
 
