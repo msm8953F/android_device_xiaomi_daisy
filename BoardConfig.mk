@@ -59,8 +59,6 @@ VENDOR_SECURITY_PATCH := 2021-07-01
 
 # Inherit the proprietary files
 include vendor/xiaomi/daisy/BoardConfigVendor.mk
-<<<<<<< HEAD
-=======
 
 # missing something 
 ALLOW_MISSING_DEPENDENCIES=true
@@ -83,4 +81,3 @@ $(shell mkdir -p $(OUT_DIR)/target/product/daisy/obj/KERNEL_OBJ/usr)
 # Sepolicy
 SELINUX_IGNORE_NEVERALLOWS := true
 #BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
->>>>>>> 42cb26e (bring up)
