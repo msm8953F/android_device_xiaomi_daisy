@@ -23,6 +23,7 @@ PRODUCT_NAME := lineage_daisy
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A2 lite
 PRODUCT_MANUFACTURER := Xiaomi
+USE_GRAPHENEOS_CAM := true
 
 # Gapps.
 TARGET_DISABLES_GMS := true
