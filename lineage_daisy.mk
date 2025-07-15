@@ -30,7 +30,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys" \
     BuildFingerprint=xiaomi/daisy/daisy_sprout:10/QKQ1.191002.002/V11.0.21.0.QDLMIXM:user/release-keys
 
-
 # Gapps.
 TARGET_DISABLES_GMS := true
 WITH_GMS := true 
@@ -44,3 +43,16 @@ TARGET_INCLUDE_VIPERFX := true
 
 # Recognized ROM As.
 ROM_FOLDER := lineage
+
+# Axion CPU Flags
+AXION_CPU_SMALL_CORES := 0,1,2,3
+AXION_CPU_BIG_CORES := 4,5,6,7
+
+# CPU sets configuration
+AXION_CPU_BG := 0-3
+AXION_CPU_FG := 0-7
+AXION_CPU_LIMIT_BG := 0-2
+AXION_CPU_UNLIMIT_UI := 0-7
+AXION_CPU_LIMIT_UI := 0-4
+AXION_CPU_DISPLAY := 4-7
+AXION_CPU_AUDIO := 0-4
