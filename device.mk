@@ -90,5 +90,5 @@ PRODUCT_PACKAGES += \
     CarDeveloperOptions \
     WallpaperPicker2Lib \
 
-# Google Gallery Go
-$(call inherit-product, packages/apps/GalleryGo/config.mk)
+
+
