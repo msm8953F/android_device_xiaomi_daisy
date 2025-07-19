@@ -47,10 +47,4 @@ echo -e "${blue}>> Cloning Fingerprint HAL${end}"
 git clone https://github.com/xiaomi-msm8953-devs/android_vendor_fingerprint_opensource_interfaces -b lineage-21 vendor/fingerprint/opensource/interfaces || {
     echo -e "${red}Failed to clone fingerprint HAL${end}"
 }
-# added google go cam
-echo -e "${blue}>> Cloning Camara${end}"
-git clone -b inherit https://github.com/tavukkdoner/android_packages_apps_CameraGo.git packages/apps/CameraGo
-echo -e "${red}Failed to clone camera${end}"
-}
 
-echo -e "${green}✅ Done applying all patches.${end}"
