@@ -15,11 +15,11 @@ $(call inherit-product, device/xiaomi/daisy/device.mk)
 
 # Inherit some common LineageOS stuff.
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/alpha/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := daisy
-PRODUCT_NAME := lineage_daisy
+PRODUCT_NAME := alpha_daisy
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A2 lite
 PRODUCT_MANUFACTURER := Xiaomi
@@ -32,28 +32,20 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Gapps.
 TARGET_DISABLES_GMS := true
-WITH_GMS := true 
 
-# Misc.
-AXION_CAMERA_REAR_INFO := 12MP
-AXION_CAMERA_FRONT_INFO := 5MP
-AXION_MAINTAINER := FARHAN<jisan>
-AXION_PROCESSOR := Qualcomm_Snapdragon_660
-TARGET_INCLUDE_VIPERFX := true
-USE_GRAPHENEOS_CAM := true
+# Build config
 
-# Recognized ROM As.
-ROM_FOLDER := lineage
+# TARGET_BUILD_PACKAGE options:
+# 1 - vanilla (default)
+# 2 - microg
+# 3 - gapps
+TARGET_BUILD_PACKAGE := 1
 
-# Axion CPU Flags
-AXION_CPU_SMALL_CORES := 0,1,2,3
-AXION_CPU_BIG_CORES := 4,5,6,7
+# Debugging
+TARGET_INCLUDE_MATLOG := false
+WITH_ADB_INSECURE := false
+TARGET_BUILD_PERMISSIVE := false
+SELINUX_IGNORE_NEVERALLOWS := false
 
-# CPU sets configuration
-AXION_CPU_BG := 0-3
-AXION_CPU_FG := 0-7
-AXION_CPU_LIMIT_BG := 0-2
-AXION_CPU_UNLIMIT_UI := 0-7
-AXION_CPU_LIMIT_UI := 0-4
-AXION_CPU_DISPLAY := 4-7
-AXION_CPU_AUDIO := 0-4
+# Maintainer
+ALPHA_MAINTAINER := farhan-han
