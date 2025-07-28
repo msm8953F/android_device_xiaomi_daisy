@@ -85,10 +85,5 @@ $(call inherit-product, vendor/xiaomi/daisy/daisy-vendor.mk)
 PRODUCT_PACKAGES += \
     RemovePackages
 
-# Remove these from PRODUCT_PACKAGES if present
-PRODUCT_PACKAGES += \
-    CarDeveloperOptions \
-    WallpaperPicker2Lib \
-
 
 
