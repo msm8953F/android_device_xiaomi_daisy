@@ -48,3 +48,5 @@ git clone https://github.com/xiaomi-msm8953-devs/android_vendor_fingerprint_open
     echo -e "${red}Failed to clone fingerprint HAL${end}"
 }
 
+# cam
+git clone https://github.com/frnwot/android_packages_apps_GrapheneCam.git -b 16 packages/apps/GrapheneCam
